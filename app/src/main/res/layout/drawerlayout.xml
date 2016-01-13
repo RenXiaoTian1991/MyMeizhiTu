@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="170dip"
+                android:background="@drawable/menu_header"
+    >
+    <com.example.add.view.CircularImage
+        android:id="@+id/head_image"
+        android:layout_height="70dip"
+        android:layout_width="70dip"
+        android:layout_marginTop="15dip"
+        android:layout_marginRight="8dip"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/renxiaotian"
+        />
+
+    </RelativeLayout>

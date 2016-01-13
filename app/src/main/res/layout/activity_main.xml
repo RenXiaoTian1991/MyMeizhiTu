@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/id_drawerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/id_content_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v4.widget.SwipeRefreshLayout
+                 xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_marginTop="5dip"
+                 android:id="@+id/id_swipe_container"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent" >
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/id_recyclerview"
+                        android:divider="#ffff0000"
+                        android:dividerHeight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+         </android.support.v4.widget.SwipeRefreshLayout>
+        </FrameLayout>
+
+            <ListView
+                android:id="@+id/left_drawer"
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:background="@android:color/white"
+                android:choiceMode="singleChoice"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="2dip" />
+    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>

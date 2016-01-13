@@ -1,0 +1,20 @@
+<resources>
+    <style name="AppTheme.Base" parent="Theme.AppCompat.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <!-- Actionbar color -->
+        <item name="colorPrimary">@android:color/holo_blue_light</item>
+        <!--Status bar color-->
+        <item name="colorPrimaryDark">@color/accent_material_light</item>
+        <!--Window color-->
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+    </style>
+    <style name="dialogAnimation" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_down_in</item>
+        <item name="android:windowExitAnimation">@anim/push_down_out</item>
+    </style>
+
+</resources>
